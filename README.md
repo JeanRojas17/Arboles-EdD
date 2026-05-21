@@ -30,7 +30,7 @@ Guillermo Alberto Idrobo Campo
 13. [Comparación general](#comparación-general)
 14. [Complejidades aproximadas](#complejidades-aproximadas)
 15. [Importancia de los árboles en programación](#importancia-de-los-árboles-en-programación)
-16. [Ejecución de los ejemplos Java](#ejecución-de-los-ejemplos-java)
+16. [Instrucciones de uso para ejecutar y compilar los archivos](#instrucciones-de-uso-para-ejecutar-y-compilar-los-archivos)
 
 ## Concepto de árbol
 
@@ -355,23 +355,52 @@ También son importantes por eficiencia. En un conjunto ordenado, una estructura
 
 En resumen, los árboles son una herramienta de organización y de optimización. Permiten que los programas representen relaciones complejas y ejecuten operaciones de búsqueda, inserción, eliminación o priorización con buen rendimiento.
 
-## Ejecución de los ejemplos Java
+## Instrucciones de uso para ejecutar y compilar los archivos
 
-Los archivos están en la carpeta [`src`](src). Para compilarlos desde esta carpeta del proyecto:
+Los códigos Java se encuentran en la carpeta [`src`](src). A continuación se explican dos formas de clonar, abrir y ejecutar el proyecto: usando **Visual Studio Code** o **NetBeans 8.2**.
+
+### Opción 1: Visual Studio Code
+
+1. Abrir Visual Studio Code.
+2. Seleccionar **Source Control** en la barra lateral izquierda.
+3. Presionar la opción **Clone Repository**.
+4. Pegar la URL del repositorio donde se encuentra el trabajo.
+5. Elegir una carpeta del computador donde se guardará el proyecto.
+6. Cuando Visual Studio Code pregunte si se desea abrir el repositorio clonado, seleccionar **Open**.
+7. Verificar que dentro del proyecto aparezca la carpeta [`src`](src).
+8. Abrir el archivo Java que se quiera ejecutar, por ejemplo:
+   - [`src/ArbolGeneral.java`](src/ArbolGeneral.java)
+   - [`src/ArbolBinario.java`](src/ArbolBinario.java)
+   - [`src/ArbolBinarioBusqueda.java`](src/ArbolBinarioBusqueda.java)
+   - [`src/ArbolAVL.java`](src/ArbolAVL.java)
+   - [`src/ArbolRojoNegro.java`](src/ArbolRojoNegro.java)
+   - [`src/MonticuloBinario.java`](src/MonticuloBinario.java)
+   - [`src/ArbolPrefijos.java`](src/ArbolPrefijos.java)
+   - [`src/ArbolB.java`](src/ArbolB.java)
+9. Presionar el botón **Run** que aparece sobre el método `main`, o usar la opción **Run Java** si está instalada la extensión de Java.
+
+Si se desea ejecutar desde la terminal integrada de Visual Studio Code, se pueden usar estos comandos:
 
 ```powershell
 javac src\*.java
-```
-
-Para ejecutar un ejemplo:
-
-```powershell
 java -cp src ArbolGeneral
-java -cp src ArbolBinario
-java -cp src ArbolBinarioBusqueda
-java -cp src ArbolAVL
-java -cp src ArbolRojoNegro
-java -cp src MonticuloBinario
-java -cp src ArbolPrefijos
-java -cp src ArbolB
 ```
+
+Para ejecutar otro ejemplo, se cambia `ArbolGeneral` por el nombre de la clase deseada.
+
+### Opción 2: NetBeans 8.2
+
+1. Abrir NetBeans 8.2.
+2. Seleccionar **Team > Git > Clone**.
+3. En **Repository URL**, pegar la URL del repositorio donde se encuentra el trabajo.
+4. Completar los datos solicitados si el repositorio requiere usuario o contraseña.
+5. En **Destination**, elegir la carpeta donde se guardará el proyecto clonado.
+6. Presionar **Next** y seleccionar la rama principal del repositorio.
+7. Presionar **Finish** para clonar el proyecto.
+8. Si NetBeans no reconoce automáticamente el proyecto como una aplicación Java, crear uno nuevo desde **File > New Project > Java > Java Application**.
+9. Desmarcar la opción **Create Main Class**, porque los archivos ya tienen sus propias clases con método `main`.
+10. Copiar los archivos `.java` de la carpeta [`src`](src) dentro de **Source Packages** del proyecto creado.
+11. Abrir la clase que se quiera ejecutar.
+12. Hacer clic derecho dentro del archivo y seleccionar **Run File**.
+
+En NetBeans 8.2 se puede ejecutar una clase específica haciendo clic derecho sobre el archivo, por ejemplo `ArbolB.java`, y seleccionando **Run File**. Cada archivo es independiente y contiene su propio método `main`.
