@@ -336,7 +336,7 @@ OpenDSA explica que los árboles B son importantes porque sus nodos pueden coinc
 ## Complejidades aproximadas
 
 | Estructura | Búsqueda | Inserción | Eliminación | Observación |
-|---|---:|---:|---:|---|
+|---|---|---|---|---|
 | Árbol general | O(n) | Depende del caso | Depende del caso | No tiene orden obligatorio |
 | Árbol binario simple | O(n) | O(n) | O(n) | Depende del recorrido |
 | Árbol binario de búsqueda balanceado | O(log n) | O(log n) | O(log n) | Si mantiene baja altura |
